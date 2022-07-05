@@ -1,0 +1,13 @@
+:root {
+  --main-color: #085aae;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', 'Roboto', 'Oxygen', sans-serif;
+  background-image: url('../src/components/main/back.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
+

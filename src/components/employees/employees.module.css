@@ -1,0 +1,99 @@
+.employees {
+    margin: auto;
+    max-width: 1150px;
+}
+
+.btn_block {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.btn_add {
+    background: none;
+    cursor: pointer;
+    border: solid;
+    border-color: var(--main-color);
+    border-radius: 10px;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
+}
+
+.btn_add:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.employee {
+    display: flex;
+    margin: 10px 0;
+}
+
+.employee a {
+    width: 100%;
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.employee div {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.employee div span, .employee button {
+    border: solid;
+    border-color: var(--main-color);
+    border-left: none;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 25px;
+}
+
+.employee div span:first-child {
+    border-left: solid var(--main-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.employee div span {
+    width: 100%;
+    text-align: center;
+    word-break: break-all;
+}
+
+.employee div:hover span {
+    background-color: var(--main-color);
+    color: white;
+    border-right-color: white;
+}
+
+.employee div:hover span:first-child {
+    border-left-color: var(--main-color);
+}
+
+.employee div:hover span:last-child {
+    border-right-color: var(--main-color);
+}
+
+.employee button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.employee button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+@media screen and (max-width: 678px) {
+    .firstName, .lastName {
+        display: none;
+    }
+
+    .employee div span {
+        font-size: 18px;
+    }
+}

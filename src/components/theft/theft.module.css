@@ -1,0 +1,92 @@
+.thefts {
+    margin: auto;
+    max-width: 1150px;
+}
+
+.theft {
+    display: flex;
+    margin: 10px 0;
+}
+
+.theft a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.theft div {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.theft div span, .theft button {
+    border: solid;
+    border-color: var(--main-color);
+    border-left: none;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.theft div span:first-child {
+    border-left: solid var(--main-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.theft div span {
+    width: 100%;
+    text-align: center;
+    word-break: break-all;
+}
+
+.theft div:hover span {
+    background-color: var(--main-color);
+    color: white;
+    border-right-color: white;
+}
+
+.theft div:hover span:first-child {
+    border-left-color: var(--main-color);
+}
+
+.theft div:hover span:last-child {
+    border-right-color: var(--main-color);
+}
+
+.theft button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.theft button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.thefts_empty {
+    --heightA: 250px;
+    height: calc(100vh - var(--heightA));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thefts_empty p {
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+    .theft div span {
+        font-size: 18px;
+    }
+
+    .theft_type {
+        display: none;
+    }
+}

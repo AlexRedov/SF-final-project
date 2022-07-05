@@ -1,0 +1,15 @@
+.updating {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate {
+	to { transform: rotate(360deg); }
+}
+
+.updating img {
+    animation: rotate 5s infinite linear;
+}
+
